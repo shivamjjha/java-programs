@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 /**
  * Program to print the reverse of the number entered by the user.
+ * 
+ * Author: Shivam Jha
  */
 public class ReverseNumber {
     public static void main(String[] args) {

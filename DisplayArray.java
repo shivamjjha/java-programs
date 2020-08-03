@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 /**
  * Program to enter elements in array and display the array.
+ * 
+ * Author: Shivam Jha
  */
 public class DisplayArray {
     public static void main(String[] args) {

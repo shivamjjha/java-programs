@@ -1,5 +1,7 @@
 /**
  * Program to illustrate the use ‘super’ keyword in inheritance.
+ * 
+ * Author: Shivam Jha
  */
 class foo {
     int x = 10;
@@ -12,11 +14,11 @@ class foo {
         System.out.println("Function in Base Class");
     }
 
-    
 }
 
 class Child extends foo {
     int x = 20;
+
     Child() {
         super(); // Calling ctor of base class.
         System.out.println("Derived class ctor");

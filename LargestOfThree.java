@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 /**
  * Program to find the largest of three numbers using conditional statement.
+ * 
+ * Author: Shivam Jha
  */
 public class LargestOfThree {
     public static void main(String[] args) {
@@ -17,9 +19,12 @@ public class LargestOfThree {
                 int c = scanner.nextInt();
                 int max;
 
-                if (a > b && a > c) max = a;
-                else if (b > a && b > c) max = b;
-                else max = c;
+                if (a > b && a > c)
+                    max = a;
+                else if (b > a && b > c)
+                    max = b;
+                else
+                    max = c;
 
                 System.out.println("The largest of three numbers entered is: " + max);
 

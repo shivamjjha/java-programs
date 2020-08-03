@@ -1,5 +1,7 @@
 /**
  * Program to show implicit and explicit type casting.
+ * 
+ * Author: Shivam Jha
  */
 public class ImplicitAndExplicitTypeCasting {
     public static void main(String[] args) {
@@ -7,5 +9,5 @@ public class ImplicitAndExplicitTypeCasting {
         float f = 3.0f; // Explicit type conversion -> from float to double
 
         System.out.println("x: " + x + ", y: " + f);
-    }    
+    }
 }

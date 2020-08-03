@@ -1,5 +1,7 @@
 /**
  * Program to show the use of ‘final’ keyword.
+ * 
+ * Author: Shivam Jha
  */
 public class finalKeyword {
     static final int weight = 120;

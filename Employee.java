@@ -4,6 +4,8 @@ import java.util.Scanner;
 /**
  * Program to implement employee class with data members i.e. name and salary
  * and member functions i.e. getdata and showdata.
+ * 
+ * Author: Shivam Jha
  */
 public class Employee {
     static Scanner scanner = new Scanner(System.in);

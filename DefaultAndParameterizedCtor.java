@@ -1,14 +1,15 @@
 /**
  * Program to illustrate the concept of default and parameterized constructors.
+ * 
+ * Author: Shivam Jha
  */
 public class DefaultAndParameterizedCtor {
     int x, y;
 
-
     DefaultAndParameterizedCtor() {
         x = y = 2;
     }
-    
+
     DefaultAndParameterizedCtor(int x, int y) {
         this.x = x;
         this.y = y;

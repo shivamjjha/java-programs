@@ -1,5 +1,7 @@
 /**
  * Program to demonstrate the use of static variables and static methods.
+ * 
+ * Author: Shivam Jha
  */
 public class StaticVariablesAndMethods {
     // Static variable, therefore global scope

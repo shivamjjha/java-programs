@@ -1,5 +1,7 @@
 /**
  * Program to create a class and call member functions.
+ * 
+ * Author: Shivam Jha
  */
 public class MemFun {
     void foo() {

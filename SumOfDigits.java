@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 /**
  * Program to print the sum of digits of a number entered by the user.
+ * 
+ * Author: Shivam Jha
  */
 public class SumOfDigits {
     public static void main(String[] args) {

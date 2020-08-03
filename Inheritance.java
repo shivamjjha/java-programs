@@ -1,6 +1,8 @@
 /**
  * Program to demonstrate the concept of inheritance.
- */ 
+ * 
+ * Author: Shivam Jha
+ */
 class Grandpa {
     void display() {
         System.out.println("Grandpa Class");
@@ -14,7 +16,7 @@ class Parent extends Grandpa {
     }
 }
 
-public class Inheritance extends Parent{
+public class Inheritance extends Parent {
     @Override
     void display() {
         System.out.println("This class");

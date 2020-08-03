@@ -1,5 +1,7 @@
 /**
  * Program to demonstrate the concept of exception handling.
+ * 
+ * Author: Shivam Jha
  */
 public class ExceptionHandling {
     void throwException() throws Exception {

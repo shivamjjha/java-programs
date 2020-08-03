@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 /**
  * Program to swap two numbers input by the user without using third variable
+ * 
+ * Author: Shivam Jha
  */
 public class SwapWithoutThird {
 

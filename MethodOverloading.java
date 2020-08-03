@@ -1,5 +1,7 @@
 /**
  * Program to demonstrate the concept of method overloading.
+ * 
+ * Author: Shivam Jha
  */
 public class MethodOverloading {
     float area(float side) {

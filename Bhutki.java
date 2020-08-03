@@ -1,5 +1,7 @@
 /**
  * Program to create an interface and implement it using class.
+ * 
+ * Author: Shivam Jha
  */
 interface Cat {
     // 'name' is Static, final and public by default
