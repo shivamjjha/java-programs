@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -24,30 +25,40 @@ public class Employee {
     }
 
     public static void main(String[] args) {
-        
-        try {
-            System.out.println("Enter number of employees: ");
-            int num = scanner.nextInt();
+        boolean tryAgain = true;
+        while (tryAgain) {
+            try {
+                System.out.println("Enter number of employees: ");
+                int num = scanner.nextInt();
 
-            Employee[] employees = new Employee[num];
+                Employee[] employees = new Employee[num];
 
-            for (int i = 0; i < employees.length; i++) {
-                employees[i] = new Employee();
+                for (int i = 0; i < employees.length; i++) {
+                    employees[i] = new Employee();
+                }
+                int i = 0;
+
+                for (i = 0; i < employees.length; i++) {
+                    employees[i].getData();
+                }
+
+                System.out.println("\n-----Employee Data-----");
+                for (i = 0; i < employees.length; i++) {
+                    employees[i].printData();
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Oh dear, looks like you have entered a string in place for number");
+                System.out.println("Do you want to try all over again?(y/n) :");
+                scanner.next();
+                char ch = scanner.next(".").charAt(0);
+                tryAgain = (ch == 'y' || ch == 'Y');
+                // System.out.println("Your choice: " + ch);
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                scanner.close();
             }
-            int i = 0;
-
-            for (i = 0; i < employees.length; i++) {
-                employees[i].getData();
-            }
-
-            System.out.println("\n-----Employee Data-----");
-            for (i = 0; i < employees.length; i++) {
-                employees[i].printData();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            scanner.close();
         }
+
     }
 }

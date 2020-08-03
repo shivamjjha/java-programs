@@ -7,25 +7,33 @@ public class SwapWithoutThird {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        boolean tryAgain = true;
 
-        try {
-            System.out.println("Enter two numbers:");
+        while (tryAgain) {
+            try {
+                System.out.println("Enter two numbers:");
 
-            int a = scanner.nextInt();
-            int b = scanner.nextInt();
+                int a = scanner.nextInt();
+                int b = scanner.nextInt();
 
-            System.out.println("a: " + a + " b: " + b);
+                System.out.println("a: " + a + " b: " + b);
 
-            a = a + b;
-            b = a - b;
-            a = a - b;
+                a = a + b;
+                b = a - b;
+                a = a - b;
 
-            System.out.println("a: " + a + " b: " + b);
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.err.println("\n---Please enter valid numbers---\n");
-        } finally {
-            scanner.close();
+                System.out.println("a: " + a + " b: " + b);
+            } catch (Exception e) {
+                e.printStackTrace();
+                System.err.println("\n---Looks like you have entered invalid numbers---\n");
+                System.out.println("Do you want to try all over again?(y/n) :");
+                scanner.next();
+                char ch = scanner.next(".").charAt(0);
+                tryAgain = (ch == 'y' || ch == 'Y');
+            } finally {
+                scanner.close();
+            }
         }
+
     }
 }

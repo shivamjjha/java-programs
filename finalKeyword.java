@@ -34,7 +34,7 @@ class foo extends finalKeyword {
         System.out.println("I am an overriden function now");
     }
 
-    // Following piece of coe will give error if uncommented
+    // Following piece of code will give error if uncommented
     /*
      * @Override int getWeight () { return weight * 1.2; }
      */
