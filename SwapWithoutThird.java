@@ -25,6 +25,7 @@ public class SwapWithoutThird {
                 a = a - b;
 
                 System.out.println("a: " + a + " b: " + b);
+                tryAgain = false;
             } catch (Exception e) {
                 e.printStackTrace();
                 System.err.println("\n---Looks like you have entered invalid numbers---\n");

@@ -13,7 +13,6 @@ public class Employee {
     double salary;
 
     void getData() {
-        // Scanner scanner = new Scanner(System.in);
         System.out.print("\tName: \n\t");
         name = scanner.next();
 
@@ -48,13 +47,13 @@ public class Employee {
                 for (i = 0; i < employees.length; i++) {
                     employees[i].printData();
                 }
+                tryAgain = false;
             } catch (InputMismatchException e) {
                 System.out.println("Oh dear, looks like you have entered a string in place for number");
                 System.out.println("Do you want to try all over again?(y/n) :");
                 scanner.next();
                 char ch = scanner.next(".").charAt(0);
                 tryAgain = (ch == 'y' || ch == 'Y');
-                // System.out.println("Your choice: " + ch);
             } catch (Exception e) {
                 e.printStackTrace();
             } finally {

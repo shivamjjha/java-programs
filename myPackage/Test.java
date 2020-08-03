@@ -3,7 +3,7 @@
  * 
  * To run this program:
  * `cd java-programs`
- * `javac myPackage/Package.java javac myPackage/Test.java`
+ * `javac myPackage/Package.java myPackage/Test.java`
  * `java myPackage.Test`
  */
 package myPackage;
