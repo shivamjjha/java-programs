@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Program to print the sum of digits of a number entered by the user.
  * 
- * Author: Shivam Jha
+ * Author: Shivam Jha and Palak Thapar
  */
 
 public class SumOfDigits {
